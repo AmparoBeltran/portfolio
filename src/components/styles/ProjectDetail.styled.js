@@ -64,6 +64,12 @@ export const ProjectDetailStyled = styled.section`
   h3 {
     font-size: 1.5em;
   }
+
+  .project-buttons {
+    display: flex;
+    gap: 2em;
+  }
+
   .projects {
     display: flex;
     margin: 3em;

@@ -43,6 +43,13 @@ export default function ProjectDetail({ projects }) {
               </div>
               <p>{filteredProject.description}</p>
               <div className="project-buttons">
+                {filteredProject.gitHubUrl && (
+                  <a href={filteredProject.gitHubUrl} target="blank">
+                    <ExplodingBtn reversed={true} width={110} height={40}>
+                      View code
+                    </ExplodingBtn>
+                  </a>
+                )}
                 <a href={filteredProject.url} target="blank">
                   <ExplodingBtn reversed={true} width={110} height={40}>
                     Visit site
